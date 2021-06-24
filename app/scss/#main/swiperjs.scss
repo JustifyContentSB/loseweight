@@ -1,0 +1,38 @@
+.reviews {
+    .swiper {
+        &-button {
+            &-prev {
+                width: 40px;
+                height: 40px;
+                top: auto;
+                left: 40%;
+                bottom: 30px;
+                &::after {
+                    font-size: 0 !important;
+                    background: #000;
+                    width: 40px;
+                    height: 40px;
+                    background: url('../../images/icons/left.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            &-next {
+                width: 40px;
+                height: 40px;
+                top: auto;
+                right: 40%;
+                bottom: 30px;
+                &::after {
+                    font-size: 0 !important;
+                    background: #000;
+                    width: 40px;
+                    height: 40px;
+                    background: url('../../images/icons/right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.nutrition {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background: #FFF7CF;
+    &__img {
+        float: left;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nutrition {
+        padding: 0;
+        &__inner {
+            max-width: 910px;
+            margin: 0 auto;
+            padding: 0;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__img {
+            width: 252px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}

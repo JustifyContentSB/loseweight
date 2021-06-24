@@ -1,0 +1,23 @@
+.footer {
+    padding: 10px 0;
+    display: none;
+    &__inner {
+        max-width: 410px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__list {
+        margin-top: 20px;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        display: block;
+    }
+}

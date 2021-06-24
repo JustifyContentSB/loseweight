@@ -1,0 +1,97 @@
+.reviews {
+    &__top {
+        margin-bottom: 12px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__item {
+        margin-bottom: 12px;
+        padding: 12px;
+        background: #fff;
+        box-shadow: 0px 4px 17px rgba(169, 169, 169, 0.25);
+        border-radius: 15px;
+    }
+    &__img {
+        width: 156px;
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin-right: 8px;
+        &-insta {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+    &__info {
+        font-size: 14px;
+        line-height: 17px;
+        &-name {
+            color: #E5E5E5;
+            margin-bottom: 6px;
+        }
+    }
+    &__list {
+        padding: 10px;
+        padding-bottom: 80px;
+        &-desktop {
+            display: none;
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media screen and (min-width: 1280px) {
+    .reviews {
+        padding-top: 23px;
+        margin-bottom: 25px;
+        &__top {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 10px;
+        }
+        &__item {
+            width: 688px;
+            padding: 23px 30px;
+            display: flex;
+            align-items: center;
+        }
+        &__img {
+            min-width: 258px;
+            margin-right: 22px;
+        }
+        &__info {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+        &__list {
+            &-mob {
+                display: none;
+            }
+            &-desktop {
+                display: block;
+            }
+        }
+    }
+}
